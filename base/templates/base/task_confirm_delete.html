@@ -1,0 +1,19 @@
+{% extends 'base/main.html' %}
+{% block content %}
+
+<div class="header-bar">
+    <div>
+        <a href="{% url 'tasks' %}">&#8592; Go Back</a>
+        <h3>Delete</h3>
+    </div>
+</div>
+
+<form method="post">
+    {% csrf_token %}
+    <p>Are you sure you want to delete "{{ task }}"?</p>
+    {{ form }}
+    <input type="submit" value="Confirm">
+    <p>&nbsp;</p>
+</form>
+
+{% endblock content %}
