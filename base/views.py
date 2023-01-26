@@ -18,8 +18,9 @@ class ShowTasks(LoginRequiredMixin, ListView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context['tasks'] = Task.objects.filter(user=self.request.user)
+        context['count'] = context['tasks'].filter(completed=False).count()
 
-        search_input = self.request.GET.get('q')
+        search_input = self.request.GET.get('search-bar')
         if search_input:
             context['tasks'] = context['tasks'].filter(
                 title__contains=search_input)
