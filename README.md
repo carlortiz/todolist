@@ -1,7 +1,5 @@
 # To Do List
 
-Credit to DENNIS IVY. This is a clone of his project.
-
 A web app built with Django that is designed to keep track of daily tasks.
 
 <p align="center"> 
