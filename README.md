@@ -8,7 +8,7 @@ A web app built with Django that is designed to keep track of daily tasks.
 
 # General
 
-This website includes a user login and registration feature using Django’s authentication system. There is also a dynamic search feature to allow users to filter for specific tasks
+This website includes a user login and registration feature using Django’s authentication system. There is also a dynamic search feature to allow users to filter for specific tasks.
 
 # Tools
 - Django 4.1
